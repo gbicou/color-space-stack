@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SpaceGrid from '@/components/SpaceGrid.vue'
+import SpaceGrid from "@/components/SpaceGrid.vue";
 </script>
 
 <template>
