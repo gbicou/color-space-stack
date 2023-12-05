@@ -5,9 +5,8 @@ import SpaceGrid from '@/components/SpaceGrid.vue'
 <template>
   <header>header here</header>
 
-  <main>
+  <main class="container mx-auto">
     <space-grid />
-    <p>main here</p>
   </main>
 </template>
 

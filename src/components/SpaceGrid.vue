@@ -144,7 +144,7 @@ const Spaces = {
 type SpacesType = typeof Spaces;
 type SpaceKey = keyof SpacesType;
 
-const spaceKey = ref<SpaceKey[]>(["lab"]);
+const spaceKey = ref<SpaceKey[]>(["lchab", "oklch"]);
 const spaceLs = computed(() => spaceKey.value.map((k) => Spaces[k]));
 
 const range = (start: number, end: number, step = 1) => Array.from(
@@ -163,13 +163,13 @@ const comp_3 = ref(50);
 
 <template>
   <div style="padding: 1em 0">
-    <span v-for="(s, k) in Spaces" :key="k">
+    <span v-for="(s, k) in Spaces" :key="k" class="mr-2">
       <input type="checkbox" :id="k" :value="k" v-model="spaceKey">
-      <label :for="k">{{s.name}}</label>
+      <label :for="k" class="ml-1">{{s.name}}</label>
     </span>
   </div>
   <div class="comps" v-for="space of spaceLs" :key="space.name">
-    <div class="grid">
+    <div class="">
       <b>{{ space.name }}</b>
       {{ space.labels[0] }}:
       <input
@@ -180,7 +180,7 @@ const comp_3 = ref(50);
           style="width: 100%"
       />
       <div class="label">{{ space.labels[2] }}</div>
-      <div v-for="y in range_2" :key="y" class="row">
+      <div v-for="y in range_2" :key="y" class="rowcol">
         <div
             v-for="z in range_3"
             :key="z"
@@ -190,7 +190,7 @@ const comp_3 = ref(50);
       </div>
       <div class="vlabel">{{ space.labels[1] }}</div>
     </div>
-    <div class="grid">
+    <div class="">
       {{ space.labels[1] }}:
       <input
           v-model.number="comp_2"
@@ -200,7 +200,7 @@ const comp_3 = ref(50);
           style="width: 100%"
       />
       <div class="label">{{ space.labels[2] }}</div>
-      <div v-for="x in range_1" :key="x" class="row">
+      <div v-for="x in range_1" :key="x" class="rowcol">
         <div
             v-for="z in range_3"
             :key="z"
@@ -210,7 +210,7 @@ const comp_3 = ref(50);
       </div>
       <div class="vlabel">{{ space.labels[0] }}</div>
     </div>
-    <div class="grid">
+    <div class="">
       {{ space.labels[2] }}:
       <input
           v-model.number="comp_3"
@@ -220,7 +220,7 @@ const comp_3 = ref(50);
           style="width: 100%"
       />
       <div class="label">{{ space.labels[1] }}</div>
-      <div v-for="x in range_1" :key="x" class="row">
+      <div v-for="x in range_1" :key="x" class="rowcol">
         <div
             v-for="y in range_2"
             :key="y"
@@ -260,10 +260,7 @@ const comp_3 = ref(50);
   width: 40px;
 }
 
-.grid {
-}
-
-.row {
+.rowcol {
   display: flex;
 
   .d {
