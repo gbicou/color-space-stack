@@ -14,6 +14,15 @@ import SpaceGrid from "@/components/SpaceGrid.vue";
   <main class="container mx-auto max-w-5xl">
     <space-grid />
   </main>
-</template>
 
-<style scoped></style>
+  <footer class="bg-neutral-200 text-neutral-600 mt-5 sticky top-full">
+    <div class="container mx-auto max-w-5xl py-4">
+      <p class="text-xs">
+        Code available on GitHub:
+        <a href="https://github.com/gbicou/color-space-stack" target="_blank" class="underline underline-offset-1">
+          gbicou/color-space-stack
+        </a>
+      </p>
+    </div>
+  </footer>
+</template>
