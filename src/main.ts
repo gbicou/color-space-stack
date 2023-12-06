@@ -1,4 +1,4 @@
-import "@fontsource-variable/nunito";
+import "@fontsource-variable/nunito-sans/standard.css";
 import "./assets/main.css";
 
 import { createApp } from "vue";

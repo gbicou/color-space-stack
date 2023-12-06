@@ -5,7 +5,7 @@ export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      sans: ["Nunito Variable", ...defaultTheme.fontFamily.sans],
+      sans: ["Nunito Sans Variable", ...defaultTheme.fontFamily.sans],
     },
     extend: {},
   },

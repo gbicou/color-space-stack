@@ -22,7 +22,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@fontsource-variable/nunito": "^5.0.17",
+    "@fontsource-variable/nunito-sans": "^5.0.9",
     "colorjs.io": "^0.4.5",
     "vue": "^3.3.10"
   },

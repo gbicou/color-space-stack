@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@fontsource-variable/nunito':
-    specifier: ^5.0.17
-    version: 5.0.17
+  '@fontsource-variable/nunito-sans':
+    specifier: ^5.0.9
+    version: 5.0.9
   colorjs.io:
     specifier: ^0.4.5
     version: 0.4.5
@@ -332,8 +332,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource-variable/nunito@5.0.17:
-    resolution: {integrity: sha512-e9F+nYc8610HtmVB08kKzHdythbSJBN9CyV3ODzCAs2LuoOviAndYdNfKOw6rHqOh3j99gfOSNlHpLNNF9O5OA==}
+  /@fontsource-variable/nunito-sans@5.0.9:
+    resolution: {integrity: sha512-mZzT9D6qQ2hwHSj8a2oexSh0a66YWQH40J7dP4BVljf6tqksVCGcErdVBllSSYs4c/SKh/n9J87kueX/Z9uLEA==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.13:
