@@ -2,6 +2,15 @@
   "name": "@bicou/color-space-stack",
   "version": "0.0.0",
   "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Benjamin VIELLARD",
+    "email": "bicou@bicou.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gbicou/color-space-stack.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
