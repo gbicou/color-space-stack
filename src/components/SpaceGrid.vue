@@ -112,7 +112,7 @@ const comp_3 = ref(50);
     </div>
     <div class="grid grid-cols-3 gap-10">
       <div class="">
-        {{ space.space.coords[space.coordinates[0]].name }}:
+        {{ space.space.coords[space.coordinates[0]].name }}: {{ Math.round(comp_1) }}%
         <input v-model.number="comp_1" type="range" min="0" max="100" style="width: 100%" />
 
         <div class="text-xs">{{ space.space.coords[space.coordinates[2]].name }} &rarr;</div>
@@ -129,7 +129,7 @@ const comp_3 = ref(50);
         <div class="text-xs vlabel">&larr; {{ space.space.coords[space.coordinates[1]].name }}</div>
       </div>
       <div class="">
-        {{ space.space.coords[space.coordinates[1]].name }}:
+        {{ space.space.coords[space.coordinates[1]].name }}: {{ Math.round(comp_2) }}%
         <input v-model.number="comp_2" type="range" min="0" max="100" style="width: 100%" />
         <div class="text-xs">{{ space.space.coords[space.coordinates[2]].name }} &rarr;</div>
         <div class="grid grid-cols-11 gap-px">
@@ -145,7 +145,7 @@ const comp_3 = ref(50);
         <div class="text-xs vlabel">&larr; {{ space.space.coords[space.coordinates[0]].name }}</div>
       </div>
       <div class="">
-        {{ space.space.coords[space.coordinates[2]].name }}:
+        {{ space.space.coords[space.coordinates[2]].name }}: {{ Math.round(comp_3) }}%
         <input v-model.number="comp_3" type="range" min="0" max="100" style="width: 100%" />
         <div class="text-xs">{{ space.space.coords[space.coordinates[1]].name }} &rarr;</div>
         <div class="grid grid-cols-11 gap-px">
