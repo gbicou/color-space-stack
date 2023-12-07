@@ -15,7 +15,7 @@ import SpaceGrid from "@/components/SpaceGrid.vue";
     <space-grid />
   </main>
 
-  <footer class="bg-neutral-200 text-neutral-600 mt-5 sticky top-full">
+  <footer class="bg-neutral-200 text-neutral-700 mt-5 sticky top-full">
     <div class="container mx-auto max-w-5xl py-4">
       <p class="text-xs">
         Code available on GitHub:
