@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
-import Color from "colorjs.io";
-
 import {
   ColorSpace,
   sRGB,
@@ -16,9 +14,25 @@ import {
   Lab_D65,
   Jzazbz,
   JzCzHz,
+  display,
+  contrastWCAG21,
 } from "colorjs.io/fn";
+import type { ColorObject } from "colorjs.io/types/src/color";
 
-function percent_coordinates(pct: [number, number, number], option: Option) {
+ColorSpace.register(sRGB);
+ColorSpace.register(sRGB_Linear);
+ColorSpace.register(P3);
+ColorSpace.register(LCH);
+ColorSpace.register(OKLCH);
+ColorSpace.register(Lab);
+ColorSpace.register(Lab_D65);
+ColorSpace.register(OKLab);
+ColorSpace.register(HSL);
+ColorSpace.register(HWB);
+ColorSpace.register(Jzazbz);
+ColorSpace.register(JzCzHz);
+
+function percent_coordinates(pct: [number, number, number], option: Option): ColorObject {
   const spaceCoords = Object.entries(option.space.coords);
   const min = spaceCoords.map(([, c]) => (c.refRange ? c.refRange[0] : c.range ? c.range[0] : 0 ?? 0));
   const max = spaceCoords.map(([, c]) => (c.refRange ? c.refRange[1] : c.range ? c.range[1] : 0 ?? 1));
@@ -28,26 +42,26 @@ function percent_coordinates(pct: [number, number, number], option: Option) {
   const coord_2 = pct[option.coordinates.indexOf(spaceCoords[1][0])];
   const coord_3 = pct[option.coordinates.indexOf(spaceCoords[2][0])];
 
-  return new Color({
-    space: option.space.id,
+  return {
+    space: option.space,
     coords: [
       (coord_1 / 100) * (max[0] - min[0]) + min[0],
       (coord_2 / 100) * (max[1] - min[1]) + min[1],
       (coord_3 / 100) * (max[2] - min[2]) + min[2],
     ],
-  });
+  };
 }
 
 function percent_to_css(pct: [number, number, number], option: Option): string {
   const color = percent_coordinates(pct, option);
-  return color.display();
+  return display(color);
 }
 
-const black = new Color({ space: "srgb", coords: [0, 0, 0] });
+const black = { space: sRGB, coords: [0, 0, 0] } as ColorObject;
 
 function percent_to_css_text(pct: [number, number, number], option: Option): string {
   const color = percent_coordinates(pct, option);
-  const constrast = color.contrastWCAG21(black);
+  const constrast = contrastWCAG21(color, black);
   return constrast >= 4.5 ? "black" : "white";
 }
 
