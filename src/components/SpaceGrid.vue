@@ -43,9 +43,12 @@ function percent_to_css(pct: [number, number, number], option: Option): string {
   return color.display();
 }
 
+const black = new Color({ space: "srgb", coords: [0, 0, 0] });
+
 function percent_to_css_text(pct: [number, number, number], option: Option): string {
   const color = percent_coordinates(pct, option);
-  return color.luminance > 0.4 ? "black" : "white";
+  const constrast = color.contrastWCAG21(black);
+  return constrast >= 4.5 ? "black" : "white";
 }
 
 interface Option {
