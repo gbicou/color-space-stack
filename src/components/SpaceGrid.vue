@@ -114,9 +114,11 @@ const comp_3 = ref(50);
       </div>
     </div>
     <div class="grid grid-cols-3 gap-10">
-      <div class="">
-        {{ space.space.coords[space.coordinates[0]].name }}: {{ Math.round(comp_1) }}%
-        <input v-model.number="comp_1" type="range" min="0" max="100" style="width: 100%" />
+      <div>
+        <label>
+          {{ space.space.coords[space.coordinates[0]].name }}: {{ Math.round(comp_1) }}%
+          <input v-model.number="comp_1" type="range" min="0" max="100" class="w-full" />
+        </label>
 
         <div class="text-xs">{{ space.space.coords[space.coordinates[2]].name }} &rarr;</div>
         <div class="grid grid-cols-11 gap-px">
@@ -124,39 +126,43 @@ const comp_3 = ref(50);
             <div
               v-for="z in range_0_100"
               :key="z"
-              class="aspect-square"
+              class="w-full h-full aspect-square"
               :style="{ background: percent_to_css([comp_1, y, z], space) }"
             />
           </template>
         </div>
         <div class="text-xs vlabel">&larr; {{ space.space.coords[space.coordinates[1]].name }}</div>
       </div>
-      <div class="">
-        {{ space.space.coords[space.coordinates[1]].name }}: {{ Math.round(comp_2) }}%
-        <input v-model.number="comp_2" type="range" min="0" max="100" style="width: 100%" />
+      <div>
+        <label>
+          {{ space.space.coords[space.coordinates[1]].name }}: {{ Math.round(comp_2) }}%
+          <input v-model.number="comp_2" type="range" min="0" max="100" class="w-full" />
+        </label>
         <div class="text-xs">{{ space.space.coords[space.coordinates[2]].name }} &rarr;</div>
         <div class="grid grid-cols-11 gap-px">
           <template v-for="x in range_0_100" :key="x">
             <div
               v-for="z in range_0_100"
               :key="z"
-              class="aspect-square"
+              class="w-full h-full aspect-square"
               :style="{ background: percent_to_css([x, comp_2, z], space) }"
             />
           </template>
         </div>
         <div class="text-xs vlabel">&larr; {{ space.space.coords[space.coordinates[0]].name }}</div>
       </div>
-      <div class="">
-        {{ space.space.coords[space.coordinates[2]].name }}: {{ Math.round(comp_3) }}%
-        <input v-model.number="comp_3" type="range" min="0" max="100" style="width: 100%" />
+      <div>
+        <label>
+          {{ space.space.coords[space.coordinates[2]].name }}: {{ Math.round(comp_3) }}%
+          <input v-model.number="comp_3" type="range" min="0" max="100" class="w-full" />
+        </label>
         <div class="text-xs">{{ space.space.coords[space.coordinates[1]].name }} &rarr;</div>
         <div class="grid grid-cols-11 gap-px">
           <template v-for="x in range_0_100" :key="x">
             <div
               v-for="y in range_0_100"
               :key="y"
-              class="aspect-square"
+              class="w-full h-full aspect-square"
               :style="{ background: percent_to_css([x, y, comp_3], space) }"
             />
           </template>
