@@ -1,0 +1,8 @@
+@use "@fontsource-variable/nunito-sans/scss/mixins" as NunitoSans;
+
+@include NunitoSans.faces(
+  $family: "Nunito Sans",
+  $subsets: latin,
+  $directory: "@fontsource-variable/nunito-sans/files",
+  $axes: all,
+);
