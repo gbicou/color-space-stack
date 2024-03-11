@@ -17,7 +17,7 @@ import {
   display,
   contrastWCAG21,
 } from "colorjs.io/fn";
-import type { ColorObject } from "colorjs.io/types/src/color";
+import type { ColorObject } from "colorjs.io";
 
 ColorSpace.register(sRGB);
 ColorSpace.register(sRGB_Linear);
