@@ -24,7 +24,7 @@
   "dependencies": {
     "@fontsource-variable/nunito-sans": "^5.0.13",
     "colorjs.io": "^0.5.0",
-    "vue": "^3.4.21"
+    "vue": "^3.4.22"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.10.2",
