@@ -44,5 +44,5 @@
     "vite": "^5.2.9",
     "vue-tsc": "^2.0.13"
   },
-  "packageManager": "pnpm@9.0.1"
+  "packageManager": "pnpm@9.0.2"
 }
