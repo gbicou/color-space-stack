@@ -24,7 +24,7 @@
   "dependencies": {
     "@fontsource-variable/nunito-sans": "^5.0.14",
     "colorjs.io": "^0.5.0",
-    "vue": "^3.4.27"
+    "vue": "^3.4.29"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.10.3",
@@ -37,12 +37,12 @@
     "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.26.0",
-    "prettier": "^3.3.1",
-    "sass": "^1.77.4",
+    "prettier": "^3.3.2",
+    "sass": "^1.77.5",
     "tailwindcss": "^3.4.4",
     "typescript": "~5.4.5",
-    "vite": "^5.2.12",
-    "vue-tsc": "^2.0.19"
+    "vite": "^5.3.1",
+    "vue-tsc": "^2.0.21"
   },
   "packageManager": "pnpm@9.3.0"
 }
