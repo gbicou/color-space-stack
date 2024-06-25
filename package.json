@@ -23,13 +23,13 @@
   },
   "dependencies": {
     "@fontsource-variable/nunito-sans": "^5.0.14",
-    "colorjs.io": "^0.5.0",
-    "vue": "^3.4.29"
+    "colorjs.io": "^0.5.1",
+    "vue": "^3.4.30"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.10.3",
     "@tsconfig/node20": "^20.1.4",
-    "@types/node": "^20.14.2",
+    "@types/node": "^20.14.8",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vue/eslint-config-prettier": "^9.0.0",
     "@vue/eslint-config-typescript": "^13.0.0",
@@ -38,11 +38,11 @@
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.26.0",
     "prettier": "^3.3.2",
-    "sass": "^1.77.5",
+    "sass": "^1.77.6",
     "tailwindcss": "^3.4.4",
     "typescript": "~5.4.5",
     "vite": "^5.3.1",
-    "vue-tsc": "^2.0.21"
+    "vue-tsc": "^2.0.22"
   },
   "packageManager": "pnpm@9.4.0"
 }
