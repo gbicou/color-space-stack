@@ -34,8 +34,8 @@ ColorSpace.register(JzCzHz);
 
 function percent_coordinates(pct: [number, number, number], option: Option): ColorObject {
   const spaceCoords = Object.entries(option.space.coords);
-  const min = spaceCoords.map(([, c]) => (c.refRange ? c.refRange[0] : c.range ? c.range[0] : 0 ?? 0));
-  const max = spaceCoords.map(([, c]) => (c.refRange ? c.refRange[1] : c.range ? c.range[1] : 0 ?? 1));
+  const min = spaceCoords.map(([, c]) => (c.refRange ? c.refRange[0] : c.range ? c.range[0] : 0) ?? 0);
+  const max = spaceCoords.map(([, c]) => (c.refRange ? c.refRange[1] : c.range ? c.range[1] : 0) ?? 1);
 
   // reorder coordinates to match color space
   const coord_1 = pct[option.coordinates.indexOf(spaceCoords[0][0])];
@@ -108,7 +108,7 @@ const comp_3 = ref(50);
 <template>
   <div>
     <span v-for="(s, k) in Options" :key="k" class="mr-3">
-      <input type="checkbox" :id="k" :value="k" v-model="options" />
+      <input :id="k" v-model="options" type="checkbox" :value="k" />
       <label :for="k" class="ml-1">{{ s.space.name }}</label>
     </span>
   </div>
