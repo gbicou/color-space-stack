@@ -112,13 +112,13 @@ const comp_3 = ref(50);
       <label :for="k" class="ml-1">{{ s.space.name }}</label>
     </span>
   </div>
-  <div v-for="space of selectedOptions" :key="space.space.id" class="mt-4 pt-4 border-t">
-    <div class="flex items-baseline mb-3">
+  <div v-for="space of selectedOptions" :key="space.space.id" class="mt-4 border-t pt-4">
+    <div class="mb-3 flex items-baseline">
       <p>
         <b class="text-lg">{{ space.space.name }}</b>
       </p>
       <div
-        class="px-4 py-2 ml-auto text-xs"
+        class="ml-auto px-4 py-2 text-xs"
         :style="{
           background: percent_to_css([comp_1, comp_2, comp_3], space),
           color: percent_to_css_text([comp_1, comp_2, comp_3], space),
@@ -140,12 +140,12 @@ const comp_3 = ref(50);
             <div
               v-for="z in range_0_100"
               :key="z"
-              class="w-full h-full aspect-square"
+              class="aspect-square size-full"
               :style="{ background: percent_to_css([comp_1, y, z], space) }"
             />
           </template>
         </div>
-        <div class="text-xs vlabel">&larr; {{ space.space.coords[space.coordinates[1]].name }}</div>
+        <div class="vertical text-xs">&larr; {{ space.space.coords[space.coordinates[1]].name }}</div>
       </div>
       <div>
         <label>
@@ -158,12 +158,12 @@ const comp_3 = ref(50);
             <div
               v-for="z in range_0_100"
               :key="z"
-              class="w-full h-full aspect-square"
+              class="aspect-square size-full"
               :style="{ background: percent_to_css([x, comp_2, z], space) }"
             />
           </template>
         </div>
-        <div class="text-xs vlabel">&larr; {{ space.space.coords[space.coordinates[0]].name }}</div>
+        <div class="vertical text-xs">&larr; {{ space.space.coords[space.coordinates[0]].name }}</div>
       </div>
       <div>
         <label>
@@ -176,21 +176,13 @@ const comp_3 = ref(50);
             <div
               v-for="y in range_0_100"
               :key="y"
-              class="w-full h-full aspect-square"
+              class="aspect-square size-full"
               :style="{ background: percent_to_css([x, y, comp_3], space) }"
             />
           </template>
         </div>
-        <div class="text-xs vlabel">&larr; {{ space.space.coords[space.coordinates[0]].name }}</div>
+        <div class="vertical text-xs">&larr; {{ space.space.coords[space.coordinates[0]].name }}</div>
       </div>
     </div>
   </div>
 </template>
-
-<style scoped>
-.vlabel {
-  text-align: right;
-  transform: rotate(-90deg) translateY(-100%);
-  transform-origin: 0 0;
-}
-</style>

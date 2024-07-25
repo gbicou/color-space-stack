@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .vertical {
+        text-align: right;
+        transform: rotate(-90deg) translateY(-100%);
+        transform-origin: 0 0;
+    }
+}

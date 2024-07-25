@@ -4,6 +4,7 @@ import js from "@eslint/js";
 import ts from "typescript-eslint";
 import vue from "eslint-plugin-vue";
 import prettier from "eslint-plugin-prettier/recommended";
+import tailwind from "eslint-plugin-tailwindcss";
 
 export default [
   {
@@ -37,6 +38,9 @@ export default [
       },
     },
   },
+
+  // tailwind
+  ...tailwind.configs["flat/recommended"],
 
   // prettier
   prettier,
