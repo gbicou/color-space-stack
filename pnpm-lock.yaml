@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@fontsource-variable/nunito-sans':
         specifier: ^5.0.14
-        version: 5.0.14
+        version: 5.0.15
       colorjs.io:
         specifier: ^0.5.2
         version: 0.5.2
@@ -257,8 +257,8 @@ packages:
     resolution: {integrity: sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fontsource-variable/nunito-sans@5.0.14':
-    resolution: {integrity: sha512-C+zzqbHcWdCftYzSOMTjppd3c9Qb2/WgOJGFFui2vPDN2Dcrcuv7grzNFKtImQln+fMDt0vVQYol6SdvZAvlxA==}
+  '@fontsource-variable/nunito-sans@5.0.15':
+    resolution: {integrity: sha512-ql/SMvLhwmJ7wzLY2FiGNutcrK9weDCAQr6Mt4R9DTxJeMVA8bSnEMirHEqMm2bRas+0apPP8TEUZNXztnjvBw==}
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -1520,7 +1520,7 @@ snapshots:
 
   '@eslint/object-schema@2.1.4': {}
 
-  '@fontsource-variable/nunito-sans@5.0.14': {}
+  '@fontsource-variable/nunito-sans@5.0.15': {}
 
   '@humanwhocodes/module-importer@1.0.1': {}
 
