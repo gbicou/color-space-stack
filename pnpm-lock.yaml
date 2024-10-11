@@ -46,8 +46,8 @@ importers:
         specifier: 3.17.4
         version: 3.17.4(tailwindcss@3.4.13)
       eslint-plugin-vue:
-        specifier: 9.28.0
-        version: 9.28.0(eslint@9.12.0(jiti@1.21.6))
+        specifier: 9.29.0
+        version: 9.29.0(eslint@9.12.0(jiti@1.21.6))
       prettier:
         specifier: 3.3.3
         version: 3.3.3
@@ -739,8 +739,8 @@ packages:
     peerDependencies:
       tailwindcss: ^3.4.0
 
-  eslint-plugin-vue@9.28.0:
-    resolution: {integrity: sha512-ShrihdjIhOTxs+MfWun6oJWuk+g/LAhN+CiuOl/jjkG3l0F2AuK5NMTaWqyvBgkFtpYmyks6P4603mLmhNJW8g==}
+  eslint-plugin-vue@9.29.0:
+    resolution: {integrity: sha512-hamyjrBhNH6Li6R1h1VF9KHfshJlKgKEg3ARbGTn72CMNDSMhWbgC7NdkRDEh25AFW+4SDATzyNM+3gWuZii8g==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -2008,7 +2008,7 @@ snapshots:
       postcss: 8.4.47
       tailwindcss: 3.4.13
 
-  eslint-plugin-vue@9.28.0(eslint@9.12.0(jiti@1.21.6)):
+  eslint-plugin-vue@9.29.0(eslint@9.12.0(jiti@1.21.6)):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.12.0(jiti@1.21.6))
       eslint: 9.12.0(jiti@1.21.6)
