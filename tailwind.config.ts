@@ -1,8 +1,8 @@
-import type { Config } from "tailwindcss";
-import defaultTheme from "tailwindcss/defaultTheme";
+import type { Config } from 'tailwindcss'
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
       sans: ['"Nunito Sans"', ...defaultTheme.fontFamily.sans],
@@ -10,4 +10,4 @@ export default {
     extend: {},
   },
   plugins: [],
-} satisfies Config;
+} satisfies Config

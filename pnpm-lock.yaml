@@ -21,6 +21,9 @@ importers:
       '@eslint/js':
         specifier: 9.15.0
         version: 9.15.0
+      '@stylistic/eslint-plugin':
+        specifier: ^2.11.0
+        version: 2.11.0(eslint@9.15.0(jiti@1.21.6))(typescript@5.6.3)
       '@tsconfig/node20':
         specifier: 20.1.4
         version: 20.1.4
@@ -48,9 +51,6 @@ importers:
       eslint-plugin-vue:
         specifier: 9.31.0
         version: 9.31.0(eslint@9.15.0(jiti@1.21.6))
-      prettier:
-        specifier: 3.4.1
-        version: 3.4.1
       sass:
         specifier: 1.81.0
         version: 1.81.0
@@ -507,6 +507,12 @@ packages:
     resolution: {integrity: sha512-foJM5vv+z2KQmn7emYdDLyTbkoO5bkHZE1oth2tWbQNGW7mX32d46Hz6T0MqXdWS2vBZhaEtHqdy9WYwGfiliA==}
     cpu: [x64]
     os: [win32]
+
+  '@stylistic/eslint-plugin@2.11.0':
+    resolution: {integrity: sha512-PNRHbydNG5EH8NK4c+izdJlxajIR6GxcUhzsYNRsn6Myep4dsZt0qFCz3rCPnkvgO5FYibDcMqgNHUT+zvjYZw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: '>=8.40.0'
 
   '@tsconfig/node20@20.1.4':
     resolution: {integrity: sha512-sqgsT69YFeLWf5NtJ4Xq/xAF8p4ZQHlmGW74Nu2tD4+g5fAsposc4ZfaaPixVu4y01BEiDCWLRDCvDM5JOsRxg==}
@@ -1207,6 +1213,10 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
+  picomatch@4.0.2:
+    resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
+    engines: {node: '>=12'}
+
   pify@2.3.0:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
@@ -1829,6 +1839,18 @@ snapshots:
 
   '@rollup/rollup-win32-x64-msvc@4.27.2':
     optional: true
+
+  '@stylistic/eslint-plugin@2.11.0(eslint@9.15.0(jiti@1.21.6))(typescript@5.6.3)':
+    dependencies:
+      '@typescript-eslint/utils': 8.16.0(eslint@9.15.0(jiti@1.21.6))(typescript@5.6.3)
+      eslint: 9.15.0(jiti@1.21.6)
+      eslint-visitor-keys: 4.2.0
+      espree: 10.3.0
+      estraverse: 5.3.0
+      picomatch: 4.0.2
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
 
   '@tsconfig/node20@20.1.4': {}
 
@@ -2558,6 +2580,8 @@ snapshots:
   picocolors@1.1.1: {}
 
   picomatch@2.3.1: {}
+
+  picomatch@4.0.2: {}
 
   pify@2.3.0: {}
 

@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import SpaceGrid from "@/components/SpaceGrid.vue";
+import SpaceGrid from '@/components/SpaceGrid.vue'
 </script>
 
 <template>
   <header class="container mx-auto max-w-5xl py-5">
-    <h1 class="text-2xl font-bold">Colorspace stack</h1>
+    <h1 class="text-2xl font-bold">
+      Colorspace stack
+    </h1>
     <p>
       Stacking multiple color spaces, displaying each plane of a component relative to the other and synchronized
       between spaces.
@@ -19,7 +21,11 @@ import SpaceGrid from "@/components/SpaceGrid.vue";
     <div class="container mx-auto max-w-5xl py-4">
       <p class="text-xs">
         Code available on GitHub:
-        <a href="https://github.com/gbicou/color-space-stack" target="_blank" class="underline underline-offset-1">
+        <a
+          href="https://github.com/gbicou/color-space-stack"
+          target="_blank"
+          class="underline underline-offset-1"
+        >
           gbicou/color-space-stack
         </a>
       </p>
