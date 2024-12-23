@@ -4,6 +4,7 @@ import vue from 'eslint-plugin-vue'
 import stylistic from '@stylistic/eslint-plugin'
 import tailwind from 'eslint-plugin-tailwindcss'
 import vueTsEslintConfig from '@vue/eslint-config-typescript'
+import vitest from '@vitest/eslint-plugin'
 
 export default ts.config(
   {
@@ -26,4 +27,10 @@ export default ts.config(
 
   // stylistic
   stylistic.configs['recommended-flat'],
+
+  // vitest
+  {
+    ...vitest.configs.recommended,
+    files: ['src/**/*.test.ts'],
+  },
 )
