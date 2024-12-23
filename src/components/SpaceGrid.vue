@@ -1,36 +1,12 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import {
-  ColorSpace,
   sRGB,
-  P3,
-  LCH,
-  OKLCH,
-  Lab,
-  OKLab,
-  sRGB_Linear,
-  HSL,
-  HWB,
-  Lab_D65,
-  Jzazbz,
-  JzCzHz,
   display,
   contrastWCAG21,
 } from 'colorjs.io/fn'
 import type { ColorObject } from 'colorjs.io'
-
-ColorSpace.register(sRGB)
-ColorSpace.register(sRGB_Linear)
-ColorSpace.register(P3)
-ColorSpace.register(LCH)
-ColorSpace.register(OKLCH)
-ColorSpace.register(Lab)
-ColorSpace.register(Lab_D65)
-ColorSpace.register(OKLab)
-ColorSpace.register(HSL)
-ColorSpace.register(HWB)
-ColorSpace.register(Jzazbz)
-ColorSpace.register(JzCzHz)
+import { type Option, type OptionKey, Options } from '@/option.ts'
 
 function percent_coordinates(pct: [number, number, number], option: Option): ColorObject {
   const spaceCoords = Object.entries(option.space.coords)
@@ -64,29 +40,6 @@ function percent_to_css_text(pct: [number, number, number], option: Option): str
   const constrast = contrastWCAG21(color, black)
   return constrast >= 4.5 ? 'black' : 'white'
 }
-
-interface Option {
-  space: ColorSpace
-  coordinates: readonly [string, string, string]
-}
-
-const Options = {
-  srgb: { space: sRGB, coordinates: ['r', 'g', 'b'] },
-  srgb_linear: { space: sRGB_Linear, coordinates: ['r', 'g', 'b'] },
-  p3: { space: P3, coordinates: ['r', 'g', 'b'] },
-  lab: { space: Lab, coordinates: ['l', 'a', 'b'] },
-  lab_d65: { space: Lab_D65, coordinates: ['l', 'a', 'b'] },
-  oklab: { space: OKLab, coordinates: ['l', 'a', 'b'] }, // OKLab,
-  lch: { space: LCH, coordinates: ['l', 'c', 'h'] }, // LCH,
-  oklch: { space: OKLCH, coordinates: ['l', 'c', 'h'] }, // OKLCH,
-  hsl: { space: HSL, coordinates: ['l', 's', 'h'] }, // HSL,
-  // hsv: { space: HSV, coordinates: ["v", "s", "h"] }, // HSV,
-  hwb: { space: HWB, coordinates: ['w', 'b', 'h'] }, // HWB,
-  jzazbz: { space: Jzazbz, coordinates: ['jz', 'az', 'bz'] },
-  jzczhz: { space: JzCzHz, coordinates: ['jz', 'cz', 'hz'] },
-} as const satisfies Record<string, Option>
-type OptionsType = typeof Options
-type OptionKey = keyof OptionsType
 
 const options = ref<OptionKey[]>(['hsl', 'lch', 'oklch'])
 const selectedOptions = computed(() =>
