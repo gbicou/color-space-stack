@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { percent_coordinates } from '@/percent.ts'
+import { percent_coordinates, percent_to_css_text } from "@/percent.ts";
 import { Options } from '@/option.ts'
 
 describe('percent_coordinates', () => {
@@ -29,5 +29,17 @@ describe('coordinates order', () => {
 
     const h = percent_coordinates([0, 0, 100], Options.hsl)
     expect(h.coords).toEqual([360, 0, 0])
+  })
+})
+
+describe('percent_to_css_text', () => {
+  it('should return black with white', () => {
+    const color = percent_to_css_text([100, 100, 100], Options.srgb)
+    expect(color).toEqual('black')
+  })
+
+  it('should return white with black', () => {
+    const color = percent_to_css_text([0, 0, 0], Options.srgb)
+    expect(color).toEqual('white')
   })
 })
