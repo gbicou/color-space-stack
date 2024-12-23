@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 import { type OptionKey, Options } from '@/option.ts'
 import { percent_to_css, percent_to_css_text } from '@/percent.ts'
 import { range } from '@/range.ts'
+import GridLabel from '@/components/GridLabel.vue'
 
 const options = ref<OptionKey[]>(['hsl', 'lch', 'oklch'])
 const selectedOptions = computed(() =>
@@ -58,16 +59,11 @@ const comp_3 = ref(50)
     </div>
     <div class="grid grid-cols-3 gap-10">
       <div>
-        <label>
-          {{ space.space.coords[space.coordinates[0]].name }}: {{ Math.round(comp_1) }}%
-          <input
-            v-model.number="comp_1"
-            type="range"
-            min="0"
-            max="100"
-            class="w-full"
-          >
-        </label>
+        <grid-label
+          v-model="comp_1"
+          :space="space"
+          :index="0"
+        />
 
         <div class="text-xs">
           {{ space.space.coords[space.coordinates[2]].name }} &rarr;
@@ -90,16 +86,11 @@ const comp_3 = ref(50)
         </div>
       </div>
       <div>
-        <label>
-          {{ space.space.coords[space.coordinates[1]].name }}: {{ Math.round(comp_2) }}%
-          <input
-            v-model.number="comp_2"
-            type="range"
-            min="0"
-            max="100"
-            class="w-full"
-          >
-        </label>
+        <grid-label
+          v-model="comp_2"
+          :space="space"
+          :index="1"
+        />
         <div class="text-xs">
           {{ space.space.coords[space.coordinates[2]].name }} &rarr;
         </div>
@@ -121,16 +112,11 @@ const comp_3 = ref(50)
         </div>
       </div>
       <div>
-        <label>
-          {{ space.space.coords[space.coordinates[2]].name }}: {{ Math.round(comp_3) }}%
-          <input
-            v-model.number="comp_3"
-            type="range"
-            min="0"
-            max="100"
-            class="w-full"
-          >
-        </label>
+        <grid-label
+          v-model="comp_3"
+          :space="space"
+          :index="2"
+        />
         <div class="text-xs">
           {{ space.space.coords[space.coordinates[1]].name }} &rarr;
         </div>
