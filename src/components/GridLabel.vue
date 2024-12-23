@@ -9,7 +9,7 @@ const props = defineProps<{
 
 const { space, index } = toRefs(props)
 
-const model = defineModel({ type: Number, default: 0 })
+const model = defineModel<number>({ required: true })
 </script>
 
 <template>
