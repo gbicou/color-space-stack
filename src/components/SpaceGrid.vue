@@ -2,6 +2,7 @@
 import { computed, ref } from 'vue'
 import { type OptionKey, Options } from '@/option.ts'
 import { percent_to_css, percent_to_css_text } from '@/percent.ts'
+import { range } from '@/range.ts'
 
 const options = ref<OptionKey[]>(['hsl', 'lch', 'oklch'])
 const selectedOptions = computed(() =>
@@ -9,9 +10,6 @@ const selectedOptions = computed(() =>
     .filter(([key]) => options.value.includes(key as OptionKey))
     .map(([, option]) => option),
 )
-
-const range = (start: number, end: number, step = 1) =>
-  Array.from(Array(Math.abs((end - start) / step) + 1), (_, i) => start + i * step)
 
 const range_0_100 = range(0, 100, 10)
 
