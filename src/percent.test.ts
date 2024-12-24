@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { percent_coordinates, percent_to_css_text } from "@/percent.ts";
+import { percent_coordinates, percent_to_css_text } from '@/percent.ts'
 import { Options } from '@/option.ts'
 
 describe('percent_coordinates', () => {
