@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fontsource-variable/nunito-sans':
-        specifier: 5.1.0
-        version: 5.1.0
+        specifier: 5.1.1
+        version: 5.1.1
       colorjs.io:
         specifier: 0.5.2
         version: 0.5.2
@@ -427,8 +427,8 @@ packages:
     resolution: {integrity: sha512-zSkKow6H5Kdm0ZUQUB2kV5JIXqoG0+uH5YADhaEHswm664N9Db8dXSi0nMJpacpMf+MyyglF1vnZohpEg5yUtg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fontsource-variable/nunito-sans@5.1.0':
-    resolution: {integrity: sha512-XiX+CmDDROJpUGFHr+XtcOaRaj4ramC8+62lQUO0LvvT2riB3jTBdRB6YbiLTt6Nu0IxSgLwwXzo0WbIako70Q==}
+  '@fontsource-variable/nunito-sans@5.1.1':
+    resolution: {integrity: sha512-BjtLqBKa+ZwxkZf7mAwZSEmX6VOC9Bvri1hXAAHPjkrwq6rXBG9THX3kl4hZQE+U0rT3febuSxSa84zAvzZUQg==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -2115,7 +2115,7 @@ snapshots:
     dependencies:
       levn: 0.4.1
 
-  '@fontsource-variable/nunito-sans@5.1.0': {}
+  '@fontsource-variable/nunito-sans@5.1.1': {}
 
   '@humanfs/core@0.19.1': {}
 
