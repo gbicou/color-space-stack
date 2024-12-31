@@ -35,7 +35,7 @@ importers:
         version: 5.2.1(vite@6.0.6(@types/node@22.10.2)(jiti@1.21.7)(sass@1.83.0)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2))
       '@vitest/eslint-plugin':
         specifier: 1.1.22
-        version: 1.1.22(@typescript-eslint/utils@8.19.0(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2))(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.2)(happy-dom@16.2.4)(sass@1.83.0))
+        version: 1.1.22(@typescript-eslint/utils@8.19.0(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2))(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.2)(happy-dom@16.2.6)(sass@1.83.0))
       '@vue/eslint-config-typescript':
         specifier: 14.2.0
         version: 14.2.0(eslint-plugin-vue@9.32.0(eslint@9.17.0(jiti@1.21.7)))(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)
@@ -59,7 +59,7 @@ importers:
         version: 9.32.0(eslint@9.17.0(jiti@1.21.7))
       happy-dom:
         specifier: ^16.0.0
-        version: 16.2.4
+        version: 16.2.6
       sass:
         specifier: 1.83.0
         version: 1.83.0
@@ -77,7 +77,7 @@ importers:
         version: 6.0.6(@types/node@22.10.2)(jiti@1.21.7)(sass@1.83.0)(yaml@2.6.1)
       vitest:
         specifier: ^2.1.8
-        version: 2.1.8(@types/node@22.10.2)(happy-dom@16.2.4)(sass@1.83.0)
+        version: 2.1.8(@types/node@22.10.2)(happy-dom@16.2.6)(sass@1.83.0)
       vue-tsc:
         specifier: 2.2.0
         version: 2.2.0(typescript@5.7.2)
@@ -1254,8 +1254,8 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
-  happy-dom@16.2.4:
-    resolution: {integrity: sha512-GvfqU6vf3ORbGr2m5M6JOAf0H8S2yokBzt8nQE0j0bApA2kk8hYO60hxc0OMCowmjx88ydy931kSqYKXoLpb7g==}
+  happy-dom@16.2.6:
+    resolution: {integrity: sha512-pl9wpbvThd2BGptDW/DbeZgCVjjFJAe1+rGJ4SdXd1nLhGngaklpGohKlX6bSJwLH8vSi4VDhQsC2Mqa6eiyhg==}
     engines: {node: '>=18.0.0'}
 
   has-flag@4.0.0:
@@ -2432,13 +2432,13 @@ snapshots:
       vite: 6.0.6(@types/node@22.10.2)(jiti@1.21.7)(sass@1.83.0)(yaml@2.6.1)
       vue: 3.5.13(typescript@5.7.2)
 
-  '@vitest/eslint-plugin@1.1.22(@typescript-eslint/utils@8.19.0(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2))(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.2)(happy-dom@16.2.4)(sass@1.83.0))':
+  '@vitest/eslint-plugin@1.1.22(@typescript-eslint/utils@8.19.0(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2))(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.2)(happy-dom@16.2.6)(sass@1.83.0))':
     dependencies:
       '@typescript-eslint/utils': 8.19.0(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)
       eslint: 9.17.0(jiti@1.21.7)
     optionalDependencies:
       typescript: 5.7.2
-      vitest: 2.1.8(@types/node@22.10.2)(happy-dom@16.2.4)(sass@1.83.0)
+      vitest: 2.1.8(@types/node@22.10.2)(happy-dom@16.2.6)(sass@1.83.0)
 
   '@vitest/expect@2.1.8':
     dependencies:
@@ -3006,7 +3006,7 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  happy-dom@16.2.4:
+  happy-dom@16.2.6:
     dependencies:
       webidl-conversions: 7.0.0
       whatwg-mimetype: 3.0.0
@@ -3500,7 +3500,7 @@ snapshots:
       sass: 1.83.0
       yaml: 2.6.1
 
-  vitest@2.1.8(@types/node@22.10.2)(happy-dom@16.2.4)(sass@1.83.0):
+  vitest@2.1.8(@types/node@22.10.2)(happy-dom@16.2.6)(sass@1.83.0):
     dependencies:
       '@vitest/expect': 2.1.8
       '@vitest/mocker': 2.1.8(vite@5.4.11(@types/node@22.10.2)(sass@1.83.0))
@@ -3524,7 +3524,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.10.2
-      happy-dom: 16.2.4
+      happy-dom: 16.2.6
     transitivePeerDependencies:
       - less
       - lightningcss
