@@ -32,7 +32,7 @@
     "@tsconfig/node22": "22.0.0",
     "@types/node": "22.10.3",
     "@vitejs/plugin-vue": "5.2.1",
-    "@vitest/eslint-plugin": "1.1.22",
+    "@vitest/eslint-plugin": "1.1.23",
     "@vue/eslint-config-typescript": "14.2.0",
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "0.7.0",
