@@ -41,7 +41,7 @@ const comp_3 = ref(50)
   <div
     v-for="space of selectedOptions"
     :key="space.space.id"
-    class="mt-4 border-t pt-4"
+    class="mt-4 border-t border-gray-200 pt-4"
   >
     <div class="mb-3 flex items-baseline">
       <p>
