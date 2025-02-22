@@ -38,7 +38,7 @@ importers:
         version: 5.2.1(vite@6.1.1(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0))(vue@3.5.13(typescript@5.7.3))
       '@vitest/eslint-plugin':
         specifier: 1.1.31
-        version: 1.1.31(@typescript-eslint/utils@8.24.1(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3))(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3)(vitest@3.0.6(@types/node@22.13.5)(happy-dom@17.1.1)(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0))
+        version: 1.1.31(@typescript-eslint/utils@8.24.1(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3))(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3)(vitest@3.0.6(@types/node@22.13.5)(happy-dom@17.1.2)(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0))
       '@vue/eslint-config-typescript':
         specifier: 14.4.0
         version: 14.4.0(eslint-plugin-vue@9.32.0(eslint@9.20.1(jiti@2.4.2)))(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3)
@@ -62,7 +62,7 @@ importers:
         version: 9.32.0(eslint@9.20.1(jiti@2.4.2))
       happy-dom:
         specifier: ^17.0.0
-        version: 17.1.1
+        version: 17.1.2
       sass:
         specifier: 1.85.0
         version: 1.85.0
@@ -80,7 +80,7 @@ importers:
         version: 6.1.1(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0)
       vitest:
         specifier: ^3.0.0
-        version: 3.0.6(@types/node@22.13.5)(happy-dom@17.1.1)(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0)
+        version: 3.0.6(@types/node@22.13.5)(happy-dom@17.1.2)(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0)
       vue-tsc:
         specifier: 2.2.2
         version: 2.2.2(typescript@5.7.3)
@@ -1146,8 +1146,8 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
-  happy-dom@17.1.1:
-    resolution: {integrity: sha512-OSTkBlmD/6Do7gCd7nZB5iFq1bF9VQg/iFmjHmxvVX2S1UiOpo6sT+aFNnu3XUsB8hCZb9+GZ0G1g1TaMiAggw==}
+  happy-dom@17.1.2:
+    resolution: {integrity: sha512-5E8yneWaJwliTPlN1gGVKrmwRRfAg54yiChOjR3vjdTr0+b8mdbZsqPh8MRRvZfQHqaBJmrJvjmoAXFcL4LXLQ==}
     engines: {node: '>=18.0.0'}
 
   has-flag@4.0.0:
@@ -2238,13 +2238,13 @@ snapshots:
       vite: 6.1.1(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0)
       vue: 3.5.13(typescript@5.7.3)
 
-  '@vitest/eslint-plugin@1.1.31(@typescript-eslint/utils@8.24.1(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3))(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3)(vitest@3.0.6(@types/node@22.13.5)(happy-dom@17.1.1)(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0))':
+  '@vitest/eslint-plugin@1.1.31(@typescript-eslint/utils@8.24.1(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3))(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3)(vitest@3.0.6(@types/node@22.13.5)(happy-dom@17.1.2)(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0))':
     dependencies:
       '@typescript-eslint/utils': 8.24.1(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3)
       eslint: 9.20.1(jiti@2.4.2)
     optionalDependencies:
       typescript: 5.7.3
-      vitest: 3.0.6(@types/node@22.13.5)(happy-dom@17.1.1)(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0)
+      vitest: 3.0.6(@types/node@22.13.5)(happy-dom@17.1.2)(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0)
 
   '@vitest/expect@3.0.6':
     dependencies:
@@ -2760,7 +2760,7 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  happy-dom@17.1.1:
+  happy-dom@17.1.2:
     dependencies:
       webidl-conversions: 7.0.0
       whatwg-mimetype: 3.0.0
@@ -3183,7 +3183,7 @@ snapshots:
       lightningcss: 1.29.1
       sass: 1.85.0
 
-  vitest@3.0.6(@types/node@22.13.5)(happy-dom@17.1.1)(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0):
+  vitest@3.0.6(@types/node@22.13.5)(happy-dom@17.1.2)(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0):
     dependencies:
       '@vitest/expect': 3.0.6
       '@vitest/mocker': 3.0.6(vite@6.1.1(@types/node@22.13.5)(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0))
@@ -3207,7 +3207,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.13.5
-      happy-dom: 17.1.1
+      happy-dom: 17.1.2
     transitivePeerDependencies:
       - jiti
       - less
