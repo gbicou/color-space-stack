@@ -22,7 +22,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@fontsource-variable/nunito-sans": "5.1.1",
+    "@fontsource-variable/nunito-sans": "5.2.5",
     "colorjs.io": "0.5.2",
     "vue": "3.5.13"
   },
