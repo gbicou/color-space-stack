@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@eslint/js": "9.21.0",
+    "@fontsource-utils/scss": "0.2.1",
     "@stylistic/eslint-plugin": "4.1.0",
     "@tailwindcss/vite": "^4.0.0",
     "@tsconfig/node22": "22.0.0",
