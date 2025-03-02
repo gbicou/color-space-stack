@@ -22,12 +22,13 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@fontsource-variable/nunito-sans": "5.1.1",
+    "@fontsource-variable/nunito-sans": "5.2.5",
     "colorjs.io": "0.5.2",
     "vue": "3.5.13"
   },
   "devDependencies": {
     "@eslint/js": "9.21.0",
+    "@fontsource-utils/scss": "0.2.1",
     "@stylistic/eslint-plugin": "4.1.0",
     "@tailwindcss/vite": "^4.0.0",
     "@tsconfig/node22": "22.0.0",

@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fontsource-variable/nunito-sans':
-        specifier: 5.1.1
-        version: 5.1.1
+        specifier: 5.2.5
+        version: 5.2.5
       colorjs.io:
         specifier: 0.5.2
         version: 0.5.2
@@ -21,6 +21,9 @@ importers:
       '@eslint/js':
         specifier: 9.21.0
         version: 9.21.0
+      '@fontsource-utils/scss':
+        specifier: 0.2.1
+        version: 0.2.1
       '@stylistic/eslint-plugin':
         specifier: 4.1.0
         version: 4.1.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)
@@ -288,8 +291,11 @@ packages:
     resolution: {integrity: sha512-JubJ5B2pJ4k4yGxaNLdbjrnk9d/iDz6/q8wOilpIowd6PJPgaxCuHBnBszq7Ce2TyMrywm5r4PnKm6V3iiZF+g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fontsource-variable/nunito-sans@5.1.1':
-    resolution: {integrity: sha512-BjtLqBKa+ZwxkZf7mAwZSEmX6VOC9Bvri1hXAAHPjkrwq6rXBG9THX3kl4hZQE+U0rT3febuSxSa84zAvzZUQg==}
+  '@fontsource-utils/scss@0.2.1':
+    resolution: {integrity: sha512-jJFzuouHw5H5/Js6qd/39hhCzbDQZGjn89JIMaGEQsJ/j7xbeC//m6dOb3/yj8SYC2jxvQ5UyVK4TBkmcYlWfQ==}
+
+  '@fontsource-variable/nunito-sans@5.2.5':
+    resolution: {integrity: sha512-J8Bi9OBUQvXwDvt9QofXD4joorYy3O9+4AU7cPx/ioa+xlH4HjAJNhA/N+nCu7IOMjFsbEbM2ZZCWQrsmQMsQw==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -1863,7 +1869,9 @@ snapshots:
       '@eslint/core': 0.12.0
       levn: 0.4.1
 
-  '@fontsource-variable/nunito-sans@5.1.1': {}
+  '@fontsource-utils/scss@0.2.1': {}
+
+  '@fontsource-variable/nunito-sans@5.2.5': {}
 
   '@humanfs/core@0.19.1': {}
 
