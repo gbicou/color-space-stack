@@ -41,7 +41,7 @@ importers:
         version: 5.2.1(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(sass@1.85.1))(vue@3.5.13(typescript@5.8.2))
       '@vitest/eslint-plugin':
         specifier: 1.1.36
-        version: 1.1.36(@typescript-eslint/utils@8.26.0(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.0.8(@types/node@22.13.10)(happy-dom@17.4.0)(jiti@2.4.2)(lightningcss@1.29.2)(sass@1.85.1))
+        version: 1.1.36(@typescript-eslint/utils@8.26.0(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.0.8(@types/node@22.13.10)(happy-dom@17.4.1)(jiti@2.4.2)(lightningcss@1.29.2)(sass@1.85.1))
       '@vue/eslint-config-typescript':
         specifier: 14.5.0
         version: 14.5.0(eslint-plugin-vue@10.0.0(eslint@9.22.0(jiti@2.4.2))(vue-eslint-parser@10.1.1(eslint@9.22.0(jiti@2.4.2))))(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2)
@@ -65,7 +65,7 @@ importers:
         version: 10.0.0(eslint@9.22.0(jiti@2.4.2))(vue-eslint-parser@10.1.1(eslint@9.22.0(jiti@2.4.2)))
       happy-dom:
         specifier: ^17.0.0
-        version: 17.4.0
+        version: 17.4.1
       sass:
         specifier: 1.85.1
         version: 1.85.1
@@ -83,7 +83,7 @@ importers:
         version: 6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(sass@1.85.1)
       vitest:
         specifier: ^3.0.0
-        version: 3.0.8(@types/node@22.13.10)(happy-dom@17.4.0)(jiti@2.4.2)(lightningcss@1.29.2)(sass@1.85.1)
+        version: 3.0.8(@types/node@22.13.10)(happy-dom@17.4.1)(jiti@2.4.2)(lightningcss@1.29.2)(sass@1.85.1)
       vue-tsc:
         specifier: 2.2.8
         version: 2.2.8(typescript@5.8.2)
@@ -1152,8 +1152,8 @@ packages:
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
 
-  happy-dom@17.4.0:
-    resolution: {integrity: sha512-LN2BIuvdFZ8snmF6LtQB2vYBzRmgCx+uqlFX9JpKVRHQ44NODNnOchB4ZW8404djHhdbQgEHRAkXCZ0zGOyzew==}
+  happy-dom@17.4.1:
+    resolution: {integrity: sha512-W4WzlDOXdEj1zRmBuq/pveIZnD0bBDsTl1DjIben76aOG/6nzdQAdpV5nR3QjOEFRJLlqJltBV0cb4NzbkB8zw==}
     engines: {node: '>=18.0.0'}
 
   has-flag@4.0.0:
@@ -2233,13 +2233,13 @@ snapshots:
       vite: 6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(sass@1.85.1)
       vue: 3.5.13(typescript@5.8.2)
 
-  '@vitest/eslint-plugin@1.1.36(@typescript-eslint/utils@8.26.0(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.0.8(@types/node@22.13.10)(happy-dom@17.4.0)(jiti@2.4.2)(lightningcss@1.29.2)(sass@1.85.1))':
+  '@vitest/eslint-plugin@1.1.36(@typescript-eslint/utils@8.26.0(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2))(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.0.8(@types/node@22.13.10)(happy-dom@17.4.1)(jiti@2.4.2)(lightningcss@1.29.2)(sass@1.85.1))':
     dependencies:
       '@typescript-eslint/utils': 8.26.0(eslint@9.22.0(jiti@2.4.2))(typescript@5.8.2)
       eslint: 9.22.0(jiti@2.4.2)
     optionalDependencies:
       typescript: 5.8.2
-      vitest: 3.0.8(@types/node@22.13.10)(happy-dom@17.4.0)(jiti@2.4.2)(lightningcss@1.29.2)(sass@1.85.1)
+      vitest: 3.0.8(@types/node@22.13.10)(happy-dom@17.4.1)(jiti@2.4.2)(lightningcss@1.29.2)(sass@1.85.1)
 
   '@vitest/expect@3.0.8':
     dependencies:
@@ -2746,7 +2746,7 @@ snapshots:
 
   graphemer@1.4.0: {}
 
-  happy-dom@17.4.0:
+  happy-dom@17.4.1:
     dependencies:
       webidl-conversions: 7.0.0
       whatwg-mimetype: 3.0.0
@@ -3159,7 +3159,7 @@ snapshots:
       lightningcss: 1.29.2
       sass: 1.85.1
 
-  vitest@3.0.8(@types/node@22.13.10)(happy-dom@17.4.0)(jiti@2.4.2)(lightningcss@1.29.2)(sass@1.85.1):
+  vitest@3.0.8(@types/node@22.13.10)(happy-dom@17.4.1)(jiti@2.4.2)(lightningcss@1.29.2)(sass@1.85.1):
     dependencies:
       '@vitest/expect': 3.0.8
       '@vitest/mocker': 3.0.8(vite@6.2.1(@types/node@22.13.10)(jiti@2.4.2)(lightningcss@1.29.2)(sass@1.85.1))
@@ -3183,7 +3183,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.13.10
-      happy-dom: 17.4.0
+      happy-dom: 17.4.1
     transitivePeerDependencies:
       - jiti
       - less
