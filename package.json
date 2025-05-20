@@ -31,7 +31,7 @@
     "@fontsource-utils/scss": "0.2.1",
     "@stylistic/eslint-plugin": "4.2.0",
     "@tailwindcss/vite": "^4.0.0",
-    "@tsconfig/node22": "22.0.1",
+    "@tsconfig/node22": "22.0.2",
     "@types/node": "22.15.19",
     "@vitejs/plugin-vue": "5.2.4",
     "@vitest/eslint-plugin": "1.2.0",
