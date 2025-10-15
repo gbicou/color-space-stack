@@ -44,7 +44,7 @@ importers:
         version: 1.3.20(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)(vitest@3.2.4(@types/node@22.18.10)(happy-dom@20.0.1)(jiti@2.6.1)(lightningcss@1.30.1)(sass@1.93.2))
       '@vue/eslint-config-typescript':
         specifier: 14.6.0
-        version: 14.6.0(eslint-plugin-vue@10.5.0(@stylistic/eslint-plugin@5.4.0(eslint@9.37.0(jiti@2.6.1)))(@typescript-eslint/parser@8.46.1(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.6.1))))(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
+        version: 14.6.0(eslint-plugin-vue@10.5.1(@stylistic/eslint-plugin@5.4.0(eslint@9.37.0(jiti@2.6.1)))(@typescript-eslint/parser@8.46.1(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.6.1))))(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
       '@vue/test-utils':
         specifier: ^2.4.6
         version: 2.4.6
@@ -61,8 +61,8 @@ importers:
         specifier: 3.18.2
         version: 3.18.2(tailwindcss@4.1.14)
       eslint-plugin-vue:
-        specifier: 10.5.0
-        version: 10.5.0(@stylistic/eslint-plugin@5.4.0(eslint@9.37.0(jiti@2.6.1)))(@typescript-eslint/parser@8.46.1(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.6.1)))
+        specifier: 10.5.1
+        version: 10.5.1(@stylistic/eslint-plugin@5.4.0(eslint@9.37.0(jiti@2.6.1)))(@typescript-eslint/parser@8.46.1(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.6.1)))
       happy-dom:
         specifier: ^20.0.0
         version: 20.0.1
@@ -1106,8 +1106,8 @@ packages:
     peerDependencies:
       tailwindcss: ^3.4.0
 
-  eslint-plugin-vue@10.5.0:
-    resolution: {integrity: sha512-7BZHsG3kC2vei8F2W8hnfDi9RK+cv5eKPMvzBdrl8Vuc0hR5odGQRli8VVzUkrmUHkxFEm4Iio1r5HOKslO0Aw==}
+  eslint-plugin-vue@10.5.1:
+    resolution: {integrity: sha512-SbR9ZBUFKgvWAbq3RrdCtWaW0IKm6wwUiApxf3BVTNfqUIo4IQQmreMg2iHFJJ6C/0wss3LXURBJ1OwS/MhFcQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       '@stylistic/eslint-plugin': ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
@@ -2528,11 +2528,11 @@ snapshots:
       '@vue/compiler-dom': 3.5.22
       '@vue/shared': 3.5.22
 
-  '@vue/eslint-config-typescript@14.6.0(eslint-plugin-vue@10.5.0(@stylistic/eslint-plugin@5.4.0(eslint@9.37.0(jiti@2.6.1)))(@typescript-eslint/parser@8.46.1(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.6.1))))(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)':
+  '@vue/eslint-config-typescript@14.6.0(eslint-plugin-vue@10.5.1(@stylistic/eslint-plugin@5.4.0(eslint@9.37.0(jiti@2.6.1)))(@typescript-eslint/parser@8.46.1(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.6.1))))(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
       '@typescript-eslint/utils': 8.46.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
       eslint: 9.37.0(jiti@2.6.1)
-      eslint-plugin-vue: 10.5.0(@stylistic/eslint-plugin@5.4.0(eslint@9.37.0(jiti@2.6.1)))(@typescript-eslint/parser@8.46.1(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.6.1)))
+      eslint-plugin-vue: 10.5.1(@stylistic/eslint-plugin@5.4.0(eslint@9.37.0(jiti@2.6.1)))(@typescript-eslint/parser@8.46.1(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.6.1)))
       fast-glob: 3.3.3
       typescript-eslint: 8.46.1(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
       vue-eslint-parser: 10.2.0(eslint@9.37.0(jiti@2.6.1))
@@ -2785,7 +2785,7 @@ snapshots:
       postcss: 8.5.6
       tailwindcss: 4.1.14
 
-  eslint-plugin-vue@10.5.0(@stylistic/eslint-plugin@5.4.0(eslint@9.37.0(jiti@2.6.1)))(@typescript-eslint/parser@8.46.1(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.6.1))):
+  eslint-plugin-vue@10.5.1(@stylistic/eslint-plugin@5.4.0(eslint@9.37.0(jiti@2.6.1)))(@typescript-eslint/parser@8.46.1(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(vue-eslint-parser@10.2.0(eslint@9.37.0(jiti@2.6.1))):
     dependencies:
       '@eslint-community/eslint-utils': 4.9.0(eslint@9.37.0(jiti@2.6.1))
       eslint: 9.37.0(jiti@2.6.1)
