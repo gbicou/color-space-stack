@@ -27,7 +27,7 @@
     "vue": "3.5.22"
   },
   "devDependencies": {
-    "@eslint/js": "9.38.0",
+    "@eslint/js": "9.39.1",
     "@fontsource-utils/scss": "0.2.2",
     "@stylistic/eslint-plugin": "5.5.0",
     "@tailwindcss/vite": "^4.0.0",
@@ -39,7 +39,7 @@
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "0.7.0",
     "autoprefixer": "10.4.21",
-    "eslint": "9.38.0",
+    "eslint": "9.39.1",
     "eslint-plugin-tailwindcss": "3.18.2",
     "eslint-plugin-vue": "10.5.1",
     "happy-dom": "^20.0.0",
