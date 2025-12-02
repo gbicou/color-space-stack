@@ -26,7 +26,7 @@ export default ts.config(
   // tailwind.configs['flat/recommended']
 
   // stylistic
-  stylistic.configs['recommended-flat'],
+  stylistic.configs['recommended'],
 
   // vitest
   {
