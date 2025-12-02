@@ -14,7 +14,7 @@ const model = defineModel<number>({ required: true })
 
 <template>
   <label>
-    {{ space.space.coords[space.coordinates[index]].name }}: {{ Math.round(model) }}%
+    {{ space.space.coords[space.coordinates[index] ?? '']?.name }}: {{ Math.round(model) }}%
     <input
       v-model.number="model"
       type="range"
