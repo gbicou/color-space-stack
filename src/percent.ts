@@ -1,16 +1,16 @@
 import type { Option } from '@/option.ts'
-import type { ColorObject } from 'colorjs.io'
+import type { ColorObject, CoordMeta, Coords } from 'colorjs.io'
 import { contrastWCAG21, display, sRGB } from 'colorjs.io/fn'
 
 export function percent_coordinates(pct: [number, number, number], option: Option): ColorObject {
-  const spaceCoords = Object.entries(option.space.coords)
-  const min = spaceCoords.map(([, c]) => (c.refRange ? c.refRange[0] : c.range ? c.range[0] : 0) ?? 0)
-  const max = spaceCoords.map(([, c]) => (c.refRange ? c.refRange[1] : c.range ? c.range[1] : 0) ?? 1)
+  const spaceCoords = Object.entries(option.space.coords) as [[string, CoordMeta], [string, CoordMeta], [string, CoordMeta]]
+  const min = spaceCoords.map(([, c]) => (c.refRange ? c.refRange[0] : c.range ? c.range[0] : 0) ?? 0) as Coords
+  const max = spaceCoords.map(([, c]) => (c.refRange ? c.refRange[1] : c.range ? c.range[1] : 0) ?? 1) as Coords
 
   // reorder coordinates to match color space
-  const coord_1 = pct[option.coordinates.indexOf(spaceCoords[0][0])]
-  const coord_2 = pct[option.coordinates.indexOf(spaceCoords[1][0])]
-  const coord_3 = pct[option.coordinates.indexOf(spaceCoords[2][0])]
+  const coord_1 = pct[option.coordinates.indexOf(spaceCoords[0][0])] ?? 0
+  const coord_2 = pct[option.coordinates.indexOf(spaceCoords[1][0])] ?? 0
+  const coord_3 = pct[option.coordinates.indexOf(spaceCoords[2][0])] ?? 0
 
   return {
     space: option.space,

@@ -66,7 +66,7 @@ const comp_3 = ref(50)
         />
 
         <div class="text-xs">
-          {{ space.space.coords[space.coordinates[2]].name }} &rarr;
+          {{ space.space.coords[space.coordinates[2]]?.name }} &rarr;
         </div>
         <div class="grid grid-cols-11 gap-px">
           <template
@@ -82,7 +82,7 @@ const comp_3 = ref(50)
           </template>
         </div>
         <div class="vertical text-xs">
-          &larr; {{ space.space.coords[space.coordinates[1]].name }}
+          &larr; {{ space.space.coords[space.coordinates[1]]?.name }}
         </div>
       </div>
       <div>
@@ -92,7 +92,7 @@ const comp_3 = ref(50)
           :index="1"
         />
         <div class="text-xs">
-          {{ space.space.coords[space.coordinates[2]].name }} &rarr;
+          {{ space.space.coords[space.coordinates[2]]?.name }} &rarr;
         </div>
         <div class="grid grid-cols-11 gap-px">
           <template
@@ -108,7 +108,7 @@ const comp_3 = ref(50)
           </template>
         </div>
         <div class="vertical text-xs">
-          &larr; {{ space.space.coords[space.coordinates[0]].name }}
+          &larr; {{ space.space.coords[space.coordinates[0]]?.name }}
         </div>
       </div>
       <div>
@@ -118,7 +118,7 @@ const comp_3 = ref(50)
           :index="2"
         />
         <div class="text-xs">
-          {{ space.space.coords[space.coordinates[1]].name }} &rarr;
+          {{ space.space.coords[space.coordinates[1]]?.name }} &rarr;
         </div>
         <div class="grid grid-cols-11 gap-px">
           <template
@@ -134,7 +134,7 @@ const comp_3 = ref(50)
           </template>
         </div>
         <div class="vertical text-xs">
-          &larr; {{ space.space.coords[space.coordinates[0]].name }}
+          &larr; {{ space.space.coords[space.coordinates[0]]?.name }}
         </div>
       </div>
     </div>
