@@ -15,9 +15,9 @@ export function percent_coordinates(pct: [number, number, number], option: Optio
   return {
     space: option.space,
     coords: [
-      (coord_1 / 100) * (max[0] - min[0]) + min[0],
-      (coord_2 / 100) * (max[1] - min[1]) + min[1],
-      (coord_3 / 100) * (max[2] - min[2]) + min[2],
+      (coord_1 / 100) * ((max[0] ?? 1) - (min[0] ?? 0)) + (min[0] ?? 0),
+      (coord_2 / 100) * ((max[1] ?? 1) - (min[1] ?? 0)) + (min[1] ?? 0),
+      (coord_3 / 100) * ((max[2] ?? 1) - (min[2] ?? 0)) + (min[2] ?? 0),
     ],
   }
 }
