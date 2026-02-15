@@ -1,36 +1,34 @@
-import js from '@eslint/js'
-import ts from 'typescript-eslint'
-import vue from 'eslint-plugin-vue'
+import { globalIgnores } from 'eslint/config'
+import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript'
+import pluginVue from 'eslint-plugin-vue'
+import pluginVitest from '@vitest/eslint-plugin'
 import stylistic from '@stylistic/eslint-plugin'
-// import tailwind from 'eslint-plugin-tailwindcss'
-import vueTsEslintConfig from '@vue/eslint-config-typescript'
-import vitest from '@vitest/eslint-plugin'
 
-export default ts.config(
+// To allow more languages other than `ts` in `.vue` files, uncomment the following lines:
+// import { configureVueProject } from '@vue/eslint-config-typescript'
+// configureVueProject({ scriptLangs: ['ts', 'tsx'] })
+// More info at https://github.com/vuejs/eslint-config-typescript/#advanced-setup
+
+export default defineConfigWithVueTs(
   {
-    ignores: ['dist/'],
+    name: 'app/files-to-lint',
+    files: ['**/*.{vue,ts,mts,tsx}'],
   },
 
-  // javascript
-  js.configs.recommended,
+  globalIgnores(['**/dist/**']),
 
-  // typescript
-  ts.configs.strict,
-  ts.configs.stylistic,
-
-  // vue
-  vue.configs['flat/recommended'],
-  vueTsEslintConfig(),
-
-  // tailwind removed until plugin supports v4
-  // tailwind.configs['flat/recommended']
+  ...pluginVue.configs['flat/recommended'],
+  vueTsConfigs.strict,
+  vueTsConfigs.stylistic,
 
   // stylistic
   stylistic.configs['recommended'],
 
-  // vitest
+  // tailwind removed until plugin supports v4
+  // tailwind.configs['flat/recommended']
+
   {
-    ...vitest.configs.recommended,
+    ...pluginVitest.configs.recommended,
     files: ['src/**/*.test.ts'],
   },
 )
