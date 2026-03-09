@@ -29,7 +29,7 @@
   "devDependencies": {
     "@eslint/js": "10.0.1",
     "@fontsource-utils/scss": "0.2.2",
-    "@stylistic/eslint-plugin": "5.9.0",
+    "@stylistic/eslint-plugin": "5.10.0",
     "@tailwindcss/vite": "4.2.1",
     "@tsconfig/node24": "24.0.4",
     "@types/node": "24.11.0",
