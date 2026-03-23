@@ -39,7 +39,7 @@
     "@vue/test-utils": "2.4.6",
     "@vue/tsconfig": "0.9.0",
     "autoprefixer": "10.4.27",
-    "eslint": "10.0.3",
+    "eslint": "10.1.0",
     "eslint-plugin-tailwindcss": "3.18.2",
     "eslint-plugin-vue": "10.8.0",
     "happy-dom": "20.8.4",
