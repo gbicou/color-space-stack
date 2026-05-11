@@ -32,7 +32,7 @@
     "@stylistic/eslint-plugin": "5.10.0",
     "@tailwindcss/vite": "4.2.4",
     "@tsconfig/node24": "24.0.4",
-    "@types/node": "24.12.2",
+    "@types/node": "24.12.3",
     "@vitejs/plugin-vue": "6.0.6",
     "@vitest/eslint-plugin": "1.6.16",
     "@vue/eslint-config-typescript": "14.7.0",
