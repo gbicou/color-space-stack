@@ -22,8 +22,8 @@ importers:
         specifier: 10.0.1
         version: 10.0.1(eslint@10.7.0(jiti@2.7.0))
       '@fontsource-utils/scss':
-        specifier: 0.2.2
-        version: 0.2.2
+        specifier: 0.2.3
+        version: 0.2.3
       '@stylistic/eslint-plugin':
         specifier: 5.10.0
         version: 5.10.0(eslint@10.7.0(jiti@2.7.0))
@@ -155,8 +155,8 @@ packages:
     resolution: {integrity: sha512-+CNAzxglkrpNf/kKywqQfk74QjtceuOE7Qm+AF8miRvPF/wmmK5+OJOgVh3AVTT3RP2mH3+FOaxlE5v72owk0A==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  '@fontsource-utils/scss@0.2.2':
-    resolution: {integrity: sha512-by8j2nJVjXWmS5Aqzg8r8+ppwRSCK8HvYwPyuHzvigJ+4AbLXHtdb1HaVHaBDb+ObZ586lAdzvEDWFoAYQO+GQ==}
+  '@fontsource-utils/scss@0.2.3':
+    resolution: {integrity: sha512-kNWr3liQ/MQArowiDG0CiIwA7ns9Ok6/apls7nR0qRHNBL7YHrowHAnh5fPiiQ0+mZzu/2Y9I3sUS36IIHx6HA==}
 
   '@fontsource-variable/nunito-sans@5.2.7':
     resolution: {integrity: sha512-rflH5HeAoNjIkwftStzQvxqCJhIS+usMr/lfslWg/RCa499B5qxyjo+74R/QMM0geQt4AY1URlG7wAR1iq6KPQ==}
@@ -1733,7 +1733,7 @@ snapshots:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  '@fontsource-utils/scss@0.2.2': {}
+  '@fontsource-utils/scss@0.2.3': {}
 
   '@fontsource-variable/nunito-sans@5.2.7': {}
 
