@@ -48,7 +48,7 @@
     "typescript": "6.0.3",
     "typescript-eslint": "8.70.0",
     "vite": "8.2.2",
-    "vitest": "4.1.11",
+    "vitest": "5.0.0",
     "vue-tsc": "3.3.11"
   },
   "packageManager": "pnpm@11.26.0+sha512.fc0e2bf890b9f983611f1ab68c0637bce914390653699f83c1a78b005ed25f2c81e77920c8fd8eee2ecf0b58b28cdcb00a84d97f69bcf7c56b2f344710238664"
