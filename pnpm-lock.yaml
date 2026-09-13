@@ -41,7 +41,7 @@ importers:
         version: 6.0.8(vite@8.2.2(@types/node@24.13.4)(jiti@2.7.0)(sass@1.104.0))(vue@3.5.42(typescript@6.0.3))
       '@vitest/eslint-plugin':
         specifier: 1.6.27
-        version: 1.6.27(@typescript-eslint/eslint-plugin@8.70.0(@typescript-eslint/parser@8.70.0(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3)(vitest@4.1.11(@types/node@24.13.4)(happy-dom@20.14.0)(vite@8.2.2(@types/node@24.13.4)(jiti@2.7.0)(sass@1.104.0)))
+        version: 1.6.27(@typescript-eslint/eslint-plugin@8.70.0(@typescript-eslint/parser@8.70.0(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3)(vitest@4.1.11(@types/node@24.13.4)(happy-dom@20.14.3)(vite@8.2.2(@types/node@24.13.4)(jiti@2.7.0)(sass@1.104.0)))
       '@vue/eslint-config-typescript':
         specifier: 14.9.0
         version: 14.9.0(eslint-plugin-vue@10.11.0(@stylistic/eslint-plugin@5.10.0(eslint@10.10.0(jiti@2.7.0)))(@typescript-eslint/parser@8.70.0(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.10.0(jiti@2.7.0))(vue-eslint-parser@10.4.1(eslint@10.10.0(jiti@2.7.0))))(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3)
@@ -64,8 +64,8 @@ importers:
         specifier: 10.11.0
         version: 10.11.0(@stylistic/eslint-plugin@5.10.0(eslint@10.10.0(jiti@2.7.0)))(@typescript-eslint/parser@8.70.0(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.10.0(jiti@2.7.0))(vue-eslint-parser@10.4.1(eslint@10.10.0(jiti@2.7.0)))
       happy-dom:
-        specifier: 20.14.0
-        version: 20.14.0
+        specifier: 20.14.3
+        version: 20.14.3
       sass:
         specifier: 1.104.0
         version: 1.104.0
@@ -83,7 +83,7 @@ importers:
         version: 8.2.2(@types/node@24.13.4)(jiti@2.7.0)(sass@1.104.0)
       vitest:
         specifier: 4.1.11
-        version: 4.1.11(@types/node@24.13.4)(happy-dom@20.14.0)(vite@8.2.2(@types/node@24.13.4)(jiti@2.7.0)(sass@1.104.0))
+        version: 4.1.11(@types/node@24.13.4)(happy-dom@20.14.3)(vite@8.2.2(@types/node@24.13.4)(jiti@2.7.0)(sass@1.104.0))
       vue-tsc:
         specifier: 3.3.11
         version: 3.3.11(typescript@6.0.3)
@@ -1025,8 +1025,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  happy-dom@20.14.0:
-    resolution: {integrity: sha512-4bRh1KzRvKDnFNTlLhzT1RZTpkKhQbQDl9j+7GXszWsvuspYdo29k6OHRf4PwiM6oLb8r/pMWeYiJjkfod5AvQ==}
+  happy-dom@20.14.3:
+    resolution: {integrity: sha512-0KMb/Eh8rsd+aMNkOk5h8LkAjo9Na1aksnEGmsuZf+GXl6UkAdIi0VbUHU7d59lXhNmawODgwwuCMiZpCxwwCw==}
     engines: {node: '>=20.0.0'}
 
   hashery@1.5.1:
@@ -2099,7 +2099,7 @@ snapshots:
       vite: 8.2.2(@types/node@24.13.4)(jiti@2.7.0)(sass@1.104.0)
       vue: 3.5.42(typescript@6.0.3)
 
-  '@vitest/eslint-plugin@1.6.27(@typescript-eslint/eslint-plugin@8.70.0(@typescript-eslint/parser@8.70.0(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3)(vitest@4.1.11(@types/node@24.13.4)(happy-dom@20.14.0)(vite@8.2.2(@types/node@24.13.4)(jiti@2.7.0)(sass@1.104.0)))':
+  '@vitest/eslint-plugin@1.6.27(@typescript-eslint/eslint-plugin@8.70.0(@typescript-eslint/parser@8.70.0(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3)(vitest@4.1.11(@types/node@24.13.4)(happy-dom@20.14.3)(vite@8.2.2(@types/node@24.13.4)(jiti@2.7.0)(sass@1.104.0)))':
     dependencies:
       '@typescript-eslint/scope-manager': 8.70.0
       '@typescript-eslint/utils': 8.70.0(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3)
@@ -2107,7 +2107,7 @@ snapshots:
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 8.70.0(@typescript-eslint/parser@8.70.0(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.10.0(jiti@2.7.0))(typescript@6.0.3)
       typescript: 6.0.3
-      vitest: 4.1.11(@types/node@24.13.4)(happy-dom@20.14.0)(vite@8.2.2(@types/node@24.13.4)(jiti@2.7.0)(sass@1.104.0))
+      vitest: 4.1.11(@types/node@24.13.4)(happy-dom@20.14.3)(vite@8.2.2(@types/node@24.13.4)(jiti@2.7.0)(sass@1.104.0))
     transitivePeerDependencies:
       - supports-color
 
@@ -2558,7 +2558,7 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  happy-dom@20.14.0:
+  happy-dom@20.14.3:
     dependencies:
       '@types/node': 24.13.4
       '@types/whatwg-mimetype': 3.0.2
@@ -2994,7 +2994,7 @@ snapshots:
       jiti: 2.7.0
       sass: 1.104.0
 
-  vitest@4.1.11(@types/node@24.13.4)(happy-dom@20.14.0)(vite@8.2.2(@types/node@24.13.4)(jiti@2.7.0)(sass@1.104.0)):
+  vitest@4.1.11(@types/node@24.13.4)(happy-dom@20.14.3)(vite@8.2.2(@types/node@24.13.4)(jiti@2.7.0)(sass@1.104.0)):
     dependencies:
       '@vitest/expect': 4.1.11
       '@vitest/mocker': 4.1.11(vite@8.2.2(@types/node@24.13.4)(jiti@2.7.0)(sass@1.104.0))
@@ -3018,7 +3018,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 24.13.4
-      happy-dom: 20.14.0
+      happy-dom: 20.14.3
     transitivePeerDependencies:
       - msw
 
