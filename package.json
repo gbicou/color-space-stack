@@ -41,7 +41,7 @@
     "autoprefixer": "10.6.1",
     "eslint": "10.11.0",
     "eslint-plugin-tailwindcss": "4.4.0",
-    "eslint-plugin-vue": "10.11.0",
+    "eslint-plugin-vue": "10.11.1",
     "happy-dom": "20.14.5",
     "sass": "1.104.1",
     "tailwindcss": "4.3.3",
