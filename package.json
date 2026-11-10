@@ -43,7 +43,7 @@
     "eslint-plugin-tailwindcss": "4.4.0",
     "eslint-plugin-vue": "10.12.0",
     "happy-dom": "21.0.4",
-    "sass": "1.108.0",
+    "sass": "1.108.1",
     "tailwindcss": "4.3.5",
     "typescript": "6.0.3",
     "typescript-eslint": "8.72.1",
